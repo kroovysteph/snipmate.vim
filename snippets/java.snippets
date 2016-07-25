@@ -9,6 +9,31 @@ snippet println
 	System.out.println(${1:/* code */});
 snippet printf
 	System.out.printf("${1:Value: %d}\n", ${2});
+snippet if
+	if (${1:/* condition */}) {
+		${2:/* code */}
+	}
+snippet elseif
+	if (${1:/* condition */}) {
+		${2:/* code */}
+		
+	} else if (${3:/* condition */}) {
+		${4:/* code */}
+		
+	} else {
+		${5:/* code */}
+	}
+snippet switch
+	switch (${1:/* variable */}) {
+		case ${2:/* value */}:
+			${3:/* code */};
+			break;
+		case ${4:/* value */}:
+			${5:/* code */};
+			break;
+		default:
+			System.out.println("switch-case: hitting no value.");
+	}
 snippet pu
 	public
 snippet po
@@ -50,8 +75,6 @@ snippet j.n
 	java.net.
 snippet j.m
 	java.math.
-snippet if
-	if (${1}) ${2}
 snippet el
 	else 
 snippet elif
