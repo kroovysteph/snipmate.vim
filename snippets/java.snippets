@@ -1,8 +1,14 @@
 snippet main
-	public static void main (String [] args)
-	{
+	public static void main (String[] args) {
+		
 		${1:/* code */}
 	}
+snippet print
+	System.out.println(${1:/* code */});
+snippet println
+	System.out.println(${1:/* code */});
+snippet printf
+	System.out.printf("${1:Value: %d}\n", ${2});
 snippet pu
 	public
 snippet po
